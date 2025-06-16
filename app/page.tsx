@@ -22,6 +22,7 @@ import {
   SOCIAL_LINKS,
 } from './data'
 import { img } from 'motion/react-client'
+import { MorphingDialogBasicTwo } from './music'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -328,6 +329,14 @@ export default function Personal() {
           </AnimatedBackground>
         </div>
       </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className='mb-5 text-lg font-medium'>Music is Yours</h3>
+        <MorphingDialogBasicTwo />
+      </motion.section> 
 
       <motion.section
         variants={VARIANTS_SECTION}
