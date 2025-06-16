@@ -6,6 +6,13 @@ type Project = {
   id: string
 }
 
+type Photos = {
+  src: string
+  alt: string
+  description: string
+  id: string
+}
+
 type WorkExperience = {
   company: string
   title: string
@@ -44,6 +51,27 @@ export const PROJECTS: Project[] = [
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
     id: 'project2',
+  },
+]
+
+export const PHOTOS: Photos[] = [
+  {
+    src: './photos/1.jpg',
+    alt: 'Photo 1',
+    description: 'A beautiful sunset over the mountains.',
+    id: 'photo1',
+  },
+  {
+    src: './photos/2.jpg',
+    alt: 'Photo 2',
+    description: 'A serene lake surrounded by trees.',
+    id: 'photo2',
+  },
+  {
+    src: './photos/3.jpg',
+    alt: 'Photo 3',
+    description: 'A bustling city street at night.',
+    id: 'photo3',
   },
 ]
 

@@ -12,13 +12,16 @@ import {
 } from '@/components/ui/morphing-dialog'
 import Link from 'next/link'
 import { AnimatedBackground } from '@/components/ui/animated-background'
+import { AnimatedGroup } from '@/components/motion-primitives/animated-group'
 import {
   PROJECTS,
+  PHOTOS,
   WORK_EXPERIENCE,
   BLOG_POSTS,
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
+import { img } from 'motion/react-client'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -169,6 +172,35 @@ export default function Personal() {
               </div>
             </div>
           ))}
+        </div>
+      </motion.section>
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className='mb-5 text-lg font-medium'>Recent Photo</h3>
+        <div className="grid ml-2 grid-cols-1 gap-6 sm:grid-cols-2">
+           <AnimatedGroup
+            className= 'grid grid-cols-2 gap-5 sm:grid-cols-3'
+            preset='scale'
+           >
+            {PHOTOS.map((photo) => (
+              <>
+                <div key={photo.id} className='space-y-2 bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50'>
+                  <img 
+                    src={photo.src} 
+                    alt={photo.alt} 
+                    className='rounded-lg scale-120 object-cover transition-transform duration-200 hover:scale-122'
+                  />
+                </div>
+                <div className='px-1'>
+                  <p className='text-base mt-2 text-zinc-600 dark:text-zinc-400'>
+                    {photo.description}
+                  </p>
+                </div>
+              </>
+            ))}
+            </AnimatedGroup>
         </div>
       </motion.section>
 
