@@ -36,20 +36,28 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'Sunset Primitives',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
+      'Like a Leonardo da Vinci in 1500s Era',
+    link: 'https://www.instagram.com/gegees99/',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      './vid/1.mp4',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
+    name: 'Laughing Primitives',
+    description: 'Like a Charlie Chaplin in 20s Era',
+    link: 'https://www.instagram.com/gegees99/',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+      './vid/2.mp4',
+    id: 'project2',
+  },
+  {
+    name: 'Running Primitives',
+    description: 'Like a Usain Bolt in 2000s Era',
+    link: 'https://www.instagram.com/gegees99/',
+    video:
+      './vid/3.mp4',
     id: 'project2',
   },
 ]
@@ -77,25 +85,25 @@ export const PHOTOS: Photos[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
-    end: 'Present',
+    company: 'SMP NEGERI 2 BULUKUMBA',
+    title: 'Student',
+    start: '2017',
+    end: '2020',
     link: 'https://ibelick.com',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
+    company: 'SMA NEGERI 8 BULUKUMBA',
+    title: 'Student',
+    start: '2020',
+    end: '2023',
     link: 'https://ibelick.com',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
+    company: 'UNIVERSITAS MUHAMMADIYAH MAKASSAR',
+    title: 'Student',
+    start: '2023',
     end: 'Present',
     link: 'https://ibelick.com',
     id: 'work3',
@@ -104,30 +112,16 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'HTML, CSS, and JavaScript',
+    description: 'Understanding the core technologies of web development.',
+    link: '/blog/html',
     uid: 'blog-1',
   },
   {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'Laravel',
+    description: 'A comprehensive guide to Laravel, a popular PHP framework.',
+    link: '/blog/laravel',
     uid: 'blog-2',
-  },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
   },
 ]
 

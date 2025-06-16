@@ -4,13 +4,14 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <header className="mb-8 flex items-center justify-between">
+    <header className="mb-5 flex items-center justify-between">
       <div>
         <Link href="/" className="text-lg font-bold text-black dark:text-white">
           Ashabul <TextEffect 
           as='span'
           preset='fade'
           per='char'
+          delay={0.5}
           >
             Kahfi.
           </TextEffect>
