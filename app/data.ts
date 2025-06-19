@@ -29,6 +29,13 @@ type BlogPost = {
   uid: string
 }
 
+type MorphingDialog = {
+  title: string
+  subtitle: string
+  image: string
+  content: string
+}
+
 type SocialLink = {
   label: string
   link: string
@@ -123,6 +130,21 @@ export const BLOG_POSTS: BlogPost[] = [
     link: '/blog/laravel',
     uid: 'blog-2',
   },
+]
+
+export const MORPHING_DIALOGS: MorphingDialog[] = [
+  {
+    title: 'Time Machine',
+    subtitle: 'Frank Ocean',
+    image: 'https://i.scdn.co/image/ab67616d0000b2733baafd899ad31c8472aa7b7a',
+    content: 'A journey through time with the sounds of Frank Ocean. Experience the evolution of music as we explore the timeless tracks that have shaped our lives. From the soulful melodies to the rhythmic beats, this collection captures the essence of nostalgia and innovation in music.',
+  },
+  {
+    title: 'Time Machine',
+    subtitle: 'Frank Ocean',
+    image: 'https://i.scdn.co/image/ab67616d0000b2733baafd899ad31c8472aa7b7a',
+    content: 'A journey through time with the sounds of Frank Ocean. Experience the evolution of music as we explore the timeless tracks that have shaped our lives. From the soulful melodies to the rhythmic beats, this collection captures the essence of nostalgia and innovation in music.',
+  }
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [

@@ -25,9 +25,6 @@ export default function AudioPlayer() {
     return (
         <div className="audio-player">
             <audio ref={audioRef} src="./music/frank.mp3" />
-            <button onClick={togglePlay} className="play-button">
-                {isPlaying ? "Pause" : "Play"}
-            </button>
         </div>
     );
 }
