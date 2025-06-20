@@ -1,30 +1,30 @@
-'use client';
-import { useState, useRef, useEffect } from "react";
+// 'use client';
+// import { useState, useRef, useEffect } from "react";
 
-export default function AudioPlayer() {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef<HTMLAudioElement>(null);
+// export default function AudioPlayer() {
+//     const [isPlaying, setIsPlaying] = useState(false);
+//     const audioRef = useRef<HTMLAudioElement>(null);
 
-    const togglePlay = () => {
-        if (!audioRef.current) return;
-        if (isPlaying) {
-            audioRef.current.pause();
-        } else {
-            audioRef.current.play();
-        }
-        setIsPlaying(!isPlaying);
-    };
+//     const togglePlay = () => {
+//         if (!audioRef.current) return;
+//         if (isPlaying) {
+//             audioRef.current.pause();
+//         } else {
+//             audioRef.current.play();
+//         }
+//         setIsPlaying(!isPlaying);
+//     };
 
-    useEffect(() => {
-        if (audioRef.current) {
-            audioRef.current.play();
-            setIsPlaying(true);
-        }
-    }, []);
+//     useEffect(() => {
+//         if (audioRef.current) {
+//             audioRef.current.play();
+//             setIsPlaying(true);
+//         }
+//     }, []);
 
-    return (
-        <div className="audio-player">
-            <audio ref={audioRef} src="./music/frank.mp3" />
-        </div>
-    );
-}
+//     return (
+//         <div className="audio-player">
+//             <audio ref={audioRef} src="./music/frank.mp3" />
+//         </div>
+//     );
+// }

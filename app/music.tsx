@@ -1,5 +1,4 @@
-import React from 'react';
-import AudioPlayer from '@/components/AudioPlayer';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   MorphingDialog,
   MorphingDialogTrigger,
@@ -13,19 +12,40 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area';
 import useSound from 'use-sound';
 import { MORPHING_DIALOGS } from './data';
-import { dialog } from 'motion/react-client';
+import { audio, dialog } from 'motion/react-client';
+
 
 export function MorphingDialogBasicTwo() {
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const togglePlay = () => {
+        if (!audioRef.current) return;
+        if (isPlaying) {
+            audioRef.current.pause();
+        } else {
+            audioRef.current.play();
+        }
+        setIsPlaying(!isPlaying);
+    };
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.play().catch(() => {});
+    }
+  }, []);
   return (
     <>
-      {MORPHING_DIALOGS.map((dialog) => (
-        <MorphingDialog
-      transition={{
-        type: 'spring',
-        stiffness: 200,
-        damping: 24,
-      }}
-    >
+    {MORPHING_DIALOGS.map((dialog, idx) => (
+      <MorphingDialog
+        key={dialog.title || idx}
+        transition={{
+          type: 'spring',
+          stiffness: 200,
+          damping: 24,
+        }}
+      >
       <MorphingDialogTrigger
         style={{
           borderRadius: '4px',
@@ -47,7 +67,7 @@ export function MorphingDialogBasicTwo() {
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className='text-[10px] text-gray-600 sm:text-xs'>
               {dialog.subtitle}
-              <AudioPlayer/>
+              <audio src={dialog.audio} autoPlay></audio>
             </MorphingDialogSubtitle>
           </div>
         </div>
@@ -72,14 +92,16 @@ export function MorphingDialogBasicTwo() {
                 />
               </div>
               <div className=''>
-                <MorphingDialogTitle className='text-black'>
+                <MorphingDialogTitle className='text-black text-3xl font-medium'>
                   {dialog.title}
                 </MorphingDialogTitle>
-                <MorphingDialogSubtitle className='font-light text-gray-400'>
+                <MorphingDialogSubtitle className='font-light text-xl text-gray-500'>
                   {dialog.subtitle}
-                  <AudioPlayer/>
+                  <div className='audio-player'>
+                    <audio ref={audioRef} src={dialog.audio} autoPlay />  
+                  </div>
                 </MorphingDialogSubtitle>
-                <div className='mt-4 text-sm text-gray-700'>
+                <div className='mt-4 text-lg text-gray-700'>
                   <p>
                     {dialog.content}
                   </p>

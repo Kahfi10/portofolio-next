@@ -34,6 +34,7 @@ type MorphingDialog = {
   subtitle: string
   image: string
   content: string
+  audio: string
 }
 
 type SocialLink = {
@@ -134,16 +135,18 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const MORPHING_DIALOGS: MorphingDialog[] = [
   {
-    title: 'Time Machine',
-    subtitle: 'Frank Ocean',
-    image: 'https://i.scdn.co/image/ab67616d0000b2733baafd899ad31c8472aa7b7a',
-    content: 'A journey through time with the sounds of Frank Ocean. Experience the evolution of music as we explore the timeless tracks that have shaped our lives. From the soulful melodies to the rhythmic beats, this collection captures the essence of nostalgia and innovation in music.',
+    title: '100 Words',
+    subtitle: 'Prateek Kuhad',
+    image: 'https://i1.sndcdn.com/artworks-EmpSNMoJpai9-0-t500x500.jpg',
+    content: "A collection of 100 words that resonate with the essence of Prateek Kuhad's music. Each word captures a moment, a feeling, or a memory that is beautifully intertwined with his melodies. This dialog invites you to explore the depth and simplicity of his lyrical genius.",
+    audio: './music/100words.m4a'
   },
   {
     title: 'Time Machine',
     subtitle: 'Frank Ocean',
     image: 'https://i.scdn.co/image/ab67616d0000b2733baafd899ad31c8472aa7b7a',
     content: 'A journey through time with the sounds of Frank Ocean. Experience the evolution of music as we explore the timeless tracks that have shaped our lives. From the soulful melodies to the rhythmic beats, this collection captures the essence of nostalgia and innovation in music.',
+    audio: './music/frank.mp3'
   }
 ]
 

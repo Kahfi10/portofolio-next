@@ -23,7 +23,6 @@ import {
 } from './data'
 import { img } from 'motion/react-client'
 import { MorphingDialogBasicTwo } from './music'
-import AudioPlayer from '@/components/AudioPlayer'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -337,7 +336,7 @@ export default function Personal() {
       >
         <h3 className='mb-5 text-lg font-medium'>Music is Yours</h3>
         <MorphingDialogBasicTwo />
-        <AudioPlayer />
+        {/* <AudioPlayer /> */}
       </motion.section> 
 
       <motion.section
