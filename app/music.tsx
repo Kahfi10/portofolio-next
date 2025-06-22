@@ -50,7 +50,7 @@ export function MorphingDialogBasicTwo() {
         style={{
           borderRadius: '4px',
         }}
-        className='grid grid-cols-2 mb-2 gap-5 sm:grid-cols-2 border border-gray-200/60 bg-white'
+        className='grid grid-cols-2 mb-2 gap-5 sm:grid-cols-2 border border-gray-200/60 bg-white dark:border-zinc-700/60 dark:bg-zinc-800/30'
       >
         <div className='flex items-center space-x-3 p-3'>
           <MorphingDialogImage
@@ -62,10 +62,10 @@ export function MorphingDialogBasicTwo() {
             }}
           />
           <div className='flex flex-col items-start justify-center space-y-0'>
-            <MorphingDialogTitle className='text-[10px] font-medium text-black sm:text-xs'>
+            <MorphingDialogTitle className='text-[10px] font-medium text-black dark:text-white sm:text-xs'>
               {dialog.title}
             </MorphingDialogTitle>
-            <MorphingDialogSubtitle className='text-[10px] text-gray-600 sm:text-xs'>
+            <MorphingDialogSubtitle className='text-[10px] text-gray-600 dark:text-gray-100 sm:text-xs'>
               {dialog.subtitle}
               <audio src={dialog.audio} autoPlay></audio>
             </MorphingDialogSubtitle>

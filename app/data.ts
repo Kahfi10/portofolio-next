@@ -97,7 +97,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Student',
     start: '2017',
     end: '2020',
-    link: 'https://ibelick.com',
+    link: 'https://github.com/Kahfi10',
     id: 'work1',
   },
   {
@@ -105,7 +105,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Student',
     start: '2020',
     end: '2023',
-    link: 'https://ibelick.com',
+    link: 'https://github.com/Kahfi10',
     id: 'work2',
   },
   {
@@ -113,7 +113,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     title: 'Student',
     start: '2023',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://github.com/Kahfi10',
     id: 'work3',
   },
 ]
@@ -138,7 +138,7 @@ export const MORPHING_DIALOGS: MorphingDialog[] = [
     title: '100 Words',
     subtitle: 'Prateek Kuhad',
     image: 'https://i1.sndcdn.com/artworks-EmpSNMoJpai9-0-t500x500.jpg',
-    content: "A collection of 100 words that resonate with the essence of Prateek Kuhad's music. Each word captures a moment, a feeling, or a memory that is beautifully intertwined with his melodies. This dialog invites you to explore the depth and simplicity of his lyrical genius.",
+    content: "A collection of 100 words that resonate with the essence of Prateek Kuhad's music. Each word captures a moment, a feeling, or a memory that is beautifully intertwined with his melodies. This dialog invites you to explore the depth and simplicity of his lyrical genius. \"100 Words\" by Prateek Kuhad is a song about unrequited love and the struggle to connect with someone who seems distant. The lyrics express the singer's longing, frustration, and persistence in trying to reach the other person, despite their lack of reciprocation. The song also touches on themes of heartbreak, nostalgia, and the passage of time.",
     audio: './music/100words.m4a'
   },
   {
@@ -153,20 +153,16 @@ export const MORPHING_DIALOGS: MorphingDialog[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://github.com/kahfi10',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/ashabul-kahfi-850b401a1/',
   },
   {
     label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.instagram.com/kaaahfiii/',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'ashabulk265@gmail.com';
